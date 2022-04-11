@@ -21,7 +21,7 @@ $q= "SELECT * FROM airport";
 $result = mysqli_query($con, $q);
 echo '<table>' . PHP_EOL;
 while (($airport = mysqli_fetch_array($result, MYSQLI_ASSOC))!== null) {
-    echo '<th>code</th><td><b>' . $airport ['code'] . '</td></b>' '<td>'. $airport ['name'] . '</td>' . PHP_EOL;
+    echo '<th></th><td><b>' . $airport ['code'] . '</td>.</b>' '<td>'. $airport ['name'] . '</td>' . PHP_EOL;
 }
 echo '</table>' . PHP_EOL;
 ?>
